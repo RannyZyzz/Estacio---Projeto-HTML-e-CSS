@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-Artesanato</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo-principal">E-Artesanato</h1>
+        <nav>
+            <a href="#produtos">Produtos</a>
+            <a href="#tabela">Preços</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section id="banner">
+        <img src="banner-artesanato.png" alt="Banner de produtos artesanais">
+    </section>
+
+    <section id="produtos">
+        <h2>Nossos Produtos</h2>
+
+        <div class="produto">
+            <img src="vela.jpg" alt="Vela artesanal">
+            <h3>Vela Aromática</h3>
+            <ul>
+                <li>Feita com cera vegetal</li>
+                <li>Aroma de lavanda</li>
+                <li>Feito a mão</li>
+            </ul>
+            <a class="botao-comprar" href="#contato">Comprar</a>
+        </div>
+
+        <div class="produto">
+            <img src="sabonete.jpg" alt="Sabonete artesanal">
+            <h3>Sabonete Natural</h3>
+            <ul>
+                <li>Óleos essenciais</li>
+                <li>Vegano</li>
+                <li>Zero plástico</li>
+            </ul>
+            <a class="botao-comprar" href="#contato">Comprar</a>
+        </div>
+
+        <div class="produto">
+            <img src="croche.jpg" alt="Porta-copos de crochê">
+            <h3>Porta-copos de Crochê</h3>
+            <ul>
+                <li>Várias cores</li>
+                <li>Feito sob encomenda</li>
+                <li>Durável e lavável</li>
+            </ul>
+            <a class="botao-comprar" href="#contato">Comprar</a>
+        </div>
+
+    </section>
+
+    <section id="tabela">
+        <h2>Tabela de Preços</h2>
+        <table>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+            <tr>
+                <td>Vela Aromática</td>
+                <td>R$250,00</td>
+            </tr>
+            <tr>
+                <td>Sabonete Natural</td>
+                <td>R$150,00</td>
+            </tr>
+            <tr>
+                <td>Porta-copos Crochê</td>
+                <td>R$100,00</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="depoimentos">
+        <h2>O que nossos clientes dizem</h2>
+        <div class="depoimento">
+            <p>"As velas são incríveis!"</p>
+            <span>- Vinícius "São José", Ratones</span>
+        </div>
+        <div class="depoimento">
+            <p>"O porta copo de Crochê é lindo! Recomendo."</p>
+            <span>- Presidente, Campeche</span>
+        </div>
+        <div class="depoimento">
+            <p>"Os Sabonetes são ótimos, meu namorado adorou!"</p>
+            <span>- João, Aeroporto FLN</span>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Faça seu pedido</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+
+            <label for="produto">Produto desejado:</label>
+            <input type="text" id="produto" name="produto">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea type="text" id="mensagem" name="mensagem"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 E-Artesanato</p>
+    </footer>
+
+</body>
+
+</html>
