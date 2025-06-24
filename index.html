@@ -15,6 +15,7 @@
             <a href="#tabela">Preços</a>
             <a href="#depoimentos">Depoimentos</a>
             <a href="#contato">Contato</a>
+            <a href="#carrinho">Carrinho (<span id="quantidade-itens-carrinho">0</span> )</a>
         </nav>
     </header>
 
@@ -33,18 +34,20 @@
                 <li>Aroma de lavanda</li>
                 <li>Feito a mão</li>
             </ul>
-            <a class="botao-comprar" href="#contato">Comprar</a>
+            <a class="botao-comprar" href="#" data-nome-produto="Vela Aromática" data-preco-produto="250.00">Adicionar
+                ao Carrinho</a>
         </div>
 
         <div class="produto">
-            <img src="sabonete.jpg" alt="Sabonete artesanal">
+            <img src="sabonete.jpg" alt="Sabonete Natural">
             <h3>Sabonete Natural</h3>
             <ul>
                 <li>Óleos essenciais</li>
                 <li>Vegano</li>
                 <li>Zero plástico</li>
             </ul>
-            <a class="botao-comprar" href="#contato">Comprar</a>
+            <a class="botao-comprar" href="#" data-nome-produto="Sabonete Natural" data-preco-produto="150.00">Adicionar
+                ao Carrinho</a>
         </div>
 
         <div class="produto">
@@ -55,7 +58,8 @@
                 <li>Feito sob encomenda</li>
                 <li>Durável e lavável</li>
             </ul>
-            <a class="botao-comprar" href="#contato">Comprar</a>
+            <a class="botao-comprar" href="#" data-nome-produto="Porta-copos de Crochê"
+                data-preco-produto="100.00">Adicionar ao Carrinho</a>
         </div>
 
     </section>
@@ -80,6 +84,15 @@
                 <td>R$100,00</td>
             </tr>
         </table>
+    </section>
+
+    <section id="carrinho">
+        <h2>Seu Carrinho de Compras</h2>
+        <ul id="lista-carrinho">
+        </ul>
+        <p>Total: R$ <span id="total-carrinho">0.00</span></p>
+        <button id="limpar-carrinho">Limpar Carrinho</button>
+        <button id="finalizar-compra">Finalizar Compra</button>
     </section>
 
     <section id="depoimentos">
@@ -121,6 +134,21 @@
         <p>&copy; 2025 E-Artesanato</p>
     </footer>
 
+    <div id="modal-confirmacao" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar-modal">&times;</span>
+            <h2>Confirmar Itens?</h2>
+            <ul id="lista-modal-itens">
+            </ul>
+            <p>Total do Pedido: R$ <span id="total-modal">0.00</span></p>
+            <div class="modal-botoes">
+                <button id="btn-confirmar">Sim</button>
+                <button id="btn-cancelar">Não</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
